@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import Toggler from "./Toggler";
 
-class EditableItem2 extends Component {
+class EditableItemWithRenderProps extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: props.initialValue
+      value: props.initialValue,
     };
   }
 
   setValue(newValue) {
     this.setState({
-      value: newValue
+      value: newValue,
     });
   }
 
@@ -42,4 +42,4 @@ class EditableItem2 extends Component {
   }
 }
 
-export default EditableItem2;
+export default EditableItemWithRenderProps;

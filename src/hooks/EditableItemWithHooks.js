@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useToggle from "./useToggle";
 
-export default function EditableItem({ label, initialValue }) {
+export default function EditableItemWithHooks({ label, initialValue }) {
   const [value, setValue] = useState(initialValue);
   const [editorVisible, toggleEditorVisible] = useToggle(false);
 
